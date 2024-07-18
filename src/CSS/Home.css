@@ -1,0 +1,60 @@
+.Profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
+.Home-container {
+  display: flex;
+}
+.Home-left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 5px;
+  margin: 10px;
+}
+.Home-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+/* Text Animation - Highlight */
+.Home-left h1 {
+  display: inline-block;
+  background-image: linear-gradient(to right, #f7ff00, #db36a4);
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: highlight 2s linear infinite;
+}
+@keyframes highlight {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media (max-width: 642px) {
+  .Home-right {
+    order: 1;
+  }
+  .Home-left {
+    order: 2;
+  }
+  .Home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .Home-left h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .Home-left p {
+    text-align: center;
+    font-size: 14px;
+  }
+}

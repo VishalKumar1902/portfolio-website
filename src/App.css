@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgb(62, 0, 87), rgb(27, 3, 44));
+  color: rgb(236, 228, 229);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.Allcontainer {
+  min-height: 300px;
+  width: 80%;
+  margin: 100px auto;
+  height: auto;
+  padding: 20px;
+  scroll-margin-top: 100px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-top: 0;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f7ff00, #db36a4);
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: highlight 2s linear infinite;
+}
+@keyframes highlight {
+  to {
+    background-position: 200% center;
+  }
+}
+.about-me {
+  padding: 10px;
+  text-align: center;
+}
+
+.section-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 642px) {
+  .Allcontainer {
+    min-height: 250px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .Allcontainer h3 {
+    font-size: 20px;
+  }
+  .about-me {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,55 @@
+.footer-container {
+  margin-bottom: 50px;
+}
+.Accounts-list {
+  height: 50px;
+
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.Accounts-list-items a {
+  text-decoration: none;
+}
+.Accounts-list-items i {
+  background-color: rgba(255, 255, 255, 0.151);
+  font-size: 25px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 10px;
+}
+.Accounts-list-items i:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-title h3,
+h4 {
+  margin: 10px;
+}
+
+@media (max-width: 642px) {
+  .Accounts-list-items i {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .footer-title h3 {
+    font-size: 20px;
+  }
+}
