@@ -12,7 +12,7 @@ const Footer = () => {
     },
     {
       class: "fab fa-github-square icon",
-      Url: "https://github.com/NewCoder195",
+      Url: "https://github.com/VishalKumar1902",
     },
     {
       class: "fab fa-linkedin icon",
